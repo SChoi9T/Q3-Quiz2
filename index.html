@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3-Quiz 2</title>
+
+	<!-- BOOTSTRAP 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	 <!-- STYLE -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- CONTENT -->
+    <div class="container mt-5 mb-5">
+        <h1 class="ticket">TICKETING CENTER</h1>
+        <hr>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <details>
+                        <summary>Personal Info</summary>
+                        <em>Fill the form out below:</em>
+                        <hr class="hr1">
+                        <form action="index.html">
+                            <label for="inputFullname">Enter Name: </label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Add your full name here...">
+                            <br>
+                            <label for="inputEmail">Email: </label>
+                            <input type="email" class="form-control" id="email" placeholder="Add your email here...">
+                            <br>
+                            <button type="button" class="btn btn-danger" id="submit" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="info()">Submit Info</button>
+                        </form>
+                    </details>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <details>
+                        <summary>Ticket Price</summary>
+                        <em>Check your ticket price:</em>
+                        <hr class="hr1">
+                        <form action="index.html">
+                            <label for="inputClass">Choose your travel class: </label>
+                            <select class="form-select" id="class">
+                                <option selected disabled>Select...</option>
+                                <option value="First">First</option>
+                                <option value="Business">Business</option>
+                                <option value="Economy">Economy</option>
+                            </select>
+                            <br>
+                            <label for="inputOption">Choose an option: </label>
+                            <select class="form-select" id="option">
+                                <option selected disabled>Select...</option>
+                                <option value="None">None</option>
+                                <option value="Student">Student</option>
+                                <option value="Senior Citizen">Senior Citizen</option>
+                            </select>
+                            <br>
+                            <button type="button" class="btn btn-danger" id="ticket" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="price()">Ticket Price</button>
+                        </form>
+                    </details>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <details>
+                        <summary>Print Ticket</summary>
+                        <em>Select your ticket:</em>
+                        <hr class="hr1">
+                        <form action="index.html">
+                            <a href="https://www.shutterstock.com/image-vector/plane-ticket-airline-boarding-pass-template-1365598463" target="_blank">
+                                <img src="ticket.png">
+                            </a>
+                            <br>
+                            <button type="button" class="btn btn-danger" id="print" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="receive()">Print Ticket</button>
+                            <button type="button" class="btn btn-danger" id="buy" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="buy()">Buy More Tickets</button>
+                        </form>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h4>&#169; AY 2024-2025 | <a href="https://github.com/SChoi9T">Sang-heon G. Choi</a> | 9-Topaz</h4>
+        </div>
+    </footer>
+
+    <!-- JS -->
+	<script src="main.js"></script>
+</body>
+</html>
